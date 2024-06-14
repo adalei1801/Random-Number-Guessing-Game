@@ -12,5 +12,6 @@ body {
 h1 {
   border-bottom: 2px white dashed;
   text-align: center;
+  width: 90%;
 }
 
