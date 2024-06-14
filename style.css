@@ -3,3 +3,13 @@ html {
   width: 100%;
 }
 
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  border-bottom: 2px black dashed;
+}
+

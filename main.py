@@ -1,15 +1,18 @@
 import sys
 import random
+
 answer = random.randint(1,10)
+
 print("Guess a number in between 1 and 10: ")
+
 for total_guesses in range(1):
-  guess = int(input())
+  guess = int(input("Guess a number between 1 and 10: "))
   if guess == answer:
     print("Correct!")
     sys.exit("Congratulations!")
   if guess != answer:
     print("Incorrect, try again: ")
-    second_guess = int(input())
+    second_guess = int(input("Incorrect, try again: "))
 
 for second_guesses in range(1):
   if second_guess == answer:
