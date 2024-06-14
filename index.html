@@ -20,17 +20,17 @@ for total_guesses in range(1):
   guess = int(input("Guess a number between 1 and 10: "))
   print("Guess a number between 1 and 10: " + str(guess))
   if guess == answer:
-    print(guess + "is correct!")
+    print(str(guess) + " is correct!")
     sys.exit("Congratulations!")
   if guess != answer:
-    print(str(guess) + "is incorrect, try again: ")
-    second_guess = int(input(guess + "is incorrect, try again: "))
+    print(str(guess) + " is incorrect, try again: ")
+    second_guess = int(input(str(guess) + " is incorrect, try again: "))
 
 for second_guesses in range(1):
   if second_guess == answer:
     print(str(second_guess) + " is correct!")
   if second_guess != answer:
-    print(str(second_guess) + "is incorrect, the answer is " + str(answer))
+    print(str(second_guess) + " is incorrect, the answer is " + str(answer))
 
 print("Guesses: ")
 tries = (guess, second_guess)
