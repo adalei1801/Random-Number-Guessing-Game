@@ -17,14 +17,14 @@ import random
 answer = random.randint(1,10)
 
 for total_guesses in range(1):
-  guess = int(input("Guess a number between 1 and 10: "))
+  guess = int(input())
   print("Guess a number between 1 and 10: " + str(guess))
   if guess == answer:
     print(str(guess) + " is correct!")
     sys.exit("Congratulations!")
   if guess != answer:
     print(str(guess) + " is incorrect, try again: ")
-    second_guess = int(input(str(guess) + " is incorrect, try again: "))
+    second_guess = int(input())
 
 for second_guesses in range(1):
   if second_guess == answer:
